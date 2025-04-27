@@ -1,0 +1,170 @@
+/* Animação épica de entrada para o body */
+body {
+    background: url("https://files.catbox.moe/ivmo6x.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Gabarito", sans-serif;
+    margin: 0;
+    opacity: 0;
+    transform: scale(1.05);
+    animation: animeIntro 2.5s ease-out forwards;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* ✨ Animação de entrada épica */
+  @keyframes animeIntro {
+    0% {
+      opacity: 0;
+      transform: scale(1.05);
+      filter: brightness(0.5) blur(2px);
+    }
+  
+    50% {
+      opacity: 0.5;
+      transform: scale(1.02);
+      filter: brightness(0.8) blur(1px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1);
+      filter: brightness(1) blur(0);
+    }
+  }
+  
+  /* Animação pulse estilo anime */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+    }
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 215, 0, 0);
+    }
+  }
+  
+  /* Aplicando o pulse ao botão de iniciar */
+  #iniciarJogoBtn {
+    animation: pulse 2s infinite;
+    font-size: 24px;
+    padding: 20px 40px;
+    background: #FFD700;
+    color: #000;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #FFD700;
+    transition: transform 0.3s ease;
+  }
+  
+  #iniciarJogoBtn:hover {
+    transform: scale(1.1);
+    background: #ff1b7b;
+    color: white;
+  }
+  
+  /* Restante do seu estilo */
+  .logo {
+    text-align: end;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img {
+    width: 40%;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover img {
+    transform: scale(1.05);
+  }
+  
+  h2 {
+    color: #FFD700;
+    transition: color 0.3s ease;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  p, h3 {
+    color: #32ff39;
+    transition: color 0.3s ease;
+  }
+  
+  .conteudo-jogo {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px #ff1b7b;
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .conteudo-jogo:hover {
+    background: rgba(0, 0, 0);
+    box-shadow: 0 0 5px #e71301;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background: #72f5ff;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background: #e71301;
+    transform: scale(1.05);
+  }
+  
+  .posicaoBtn {
+    background: #ff1b7b;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .posicaoBtn:hover {
+    background: #19caca;
+    transform: scale(1.05);
+  }
+  
+  .posicaoBtn.selected {
+    background: #19caca;
+  }
+  #fimDeJogo img {
+    border-radius: 12px;
+    box-shadow: 0 0 20px #FFD700;
+    max-width: 400px;
+    width: 90%;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,47 @@
+
+<body>
+    <!-- Botão de música -->
+    <button id="musicaBtn" style="position: absolute; top: 20px; left: 20px;">🎵 Música: Play</button>
+    <audio id="musicaFundo" loop>
+      <source src="https://files.catbox.moe/hi082h.mp3" type="audio/mpeg" />
+      Seu navegador não suporta áudio.
+    </audio>
+  
+    <!-- Botão iniciar -->
+    <button id="iniciarJogoBtn">🚩 Vamos ajudar os Chapéus de palha a encontrar os tesouros!</button>
+  
+    <!-- Jogo -->
+    <div id="jogo" style="display: none; text-align: center;">
+      <h2>Escolha até 5 posições:</h2>
+  
+      <div id="botoesPosicoes">
+        <!-- Exemplo de botões de posição -->
+        <!-- Adicione mais conforme necessário (ex: até 10 ou mais) -->
+        <button class="posicaoBtn" data-value="1">1</button>
+        <button class="posicaoBtn" data-value="2">2</button>
+        <button class="posicaoBtn" data-value="3">3</button>
+        <button class="posicaoBtn" data-value="4">4</button>
+        <button class="posicaoBtn" data-value="5">5</button>
+        <button class="posicaoBtn" data-value="6">6</button>
+        <button class="posicaoBtn" data-value="7">7</button>
+        <button class="posicaoBtn" data-value="8">8</button>
+        <button class="posicaoBtn" data-value="9">9</button>
+        <button class="posicaoBtn" data-value="10">10</button>
+      </div>
+  
+      <br />
+      <button id="verificarBtn">🔍 Verificar</button>
+      <p id="logPosicoes"></p>
+    </div>
+  
+    <!-- Tela final de jogo -->
+    <div id="fimDeJogo" style="display: none; text-align: center;">
+      <img id="imagemFinal" src="" alt="Resultado final" />
+      <br />
+      <button id="jogarNovamenteBtn">🔁 Jogar Novamente</button>
+      <button id="desistirBtn">🚪 Desistir</button>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+  
